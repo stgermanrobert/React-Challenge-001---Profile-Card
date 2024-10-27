@@ -7,9 +7,9 @@ export default function App() {
       <div className="data">
         <Intro />
         {/* Should contain one Skill component
-          for each web dev skill that you have,
-          customized with props */}
-        <SkillList />
+        for each web dev skill that you have,
+        customized with props */}
+        <SkillList className="skill-list" />
       </div>
     </div>
   );
@@ -17,18 +17,20 @@ export default function App() {
 
 function Avatar() {
   return (
-    <img
-      src="Photos/costadoJeZoom2.jpg"
-      alt="German Robert"
-      className="avatar"
-    />
+    <div>
+      <img
+        src="photos/costadoJeZoom2.jpg"
+        alt="German Robert"
+        className="avatar"
+      />
+      <h1 className="data">German Robert</h1>
+    </div>
   );
 }
 
 function Intro() {
   return (
     <div className="data">
-      <h1>German Robert</h1>
       <p>
         Aspiring front-end developer with a background in AV production. When
         not working or studying, I enjoy exploring new music, watching horror
@@ -41,12 +43,11 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill={"HTML + CSS 👍🏻"} x="orange" />
-      <Skill skill={"JavaScript 💪🏻"} x="yellow" />
-      <Skill skill={"React 👍🏻"} x="skyblue" />
-      <Skill skill={"Git and GitHub 👍🏻"} x="red" />
-      <Skill skill={"Web Design 👍🏻"} x="blue" />
-      <Skill skill={"AI 💪🏻"} x="green" />
+      <Skill skill={"HTML + CSS 👍🏻"} x="green" />
+      <Skill skill={"JavaScript 💪🏻"} x="blue" />
+      <Skill skill={"React 👍🏻"} x="red" />
+      <Skill skill={"Git and GitHub 👍🏻"} x="yellow" />
+      <Skill skill={"Web Design 👍🏻"} x="light-blue" />
     </div>
   );
 }
