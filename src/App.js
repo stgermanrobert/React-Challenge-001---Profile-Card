@@ -17,11 +17,7 @@ export default function App() {
 
 function Avatar() {
   return (
-    <img
-      src="Photos/costadoJeZoom2.jpg"
-      alt="German Robert"
-      className="avatar"
-    />
+    <img src="Photos/germanRobert.jpg" alt="German Robert" className="avatar" />
   );
 }
 
